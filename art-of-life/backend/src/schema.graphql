@@ -1,0 +1,10 @@
+type Cat {
+    name: String!
+}
+type Mutation {
+    createCat(name: String!): Cat
+}
+
+type Query {
+    cats: [Cat]!
+}
